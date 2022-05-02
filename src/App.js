@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
-import 'flowbite';
 import ManageItems from './components/ManageItems/ManageItems';
 import Header from './components/Header/Header';
 import AddItem from './components/AddItem/AddItem';
