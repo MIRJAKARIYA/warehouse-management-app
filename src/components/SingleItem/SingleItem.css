@@ -1,0 +1,17 @@
+.card-container-style{
+    background: linear-gradient(-45deg,navy,rgb(136, 7, 7),navy);
+	background-size: 200% 200%;
+	animation: cardback 5s ease infinite;
+
+}
+  @keyframes cardback {
+	0% {
+		background-position: 0% 20%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 20%;
+	}
+}

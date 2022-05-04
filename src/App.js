@@ -6,6 +6,7 @@ import Header from './components/Header/Header';
 import AddItem from './components/AddItem/AddItem';
 import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
+import ItemInventory from './components/ItemInventory/ItemInventory';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+        <Route path='/inventory/:itemId' element={<ItemInventory></ItemInventory>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>

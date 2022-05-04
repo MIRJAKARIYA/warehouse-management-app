@@ -27,7 +27,7 @@ const Banner = () => {
     des: "The term battleship came into use in the late 1880s to describe a type of ironclad warship,now referred to by historians as pre-dreadnought battleships.In 1906,the commissioning of HMS Dreadnought into the United Kingdom's Royal Navy heralded a revolution in the field of battleship design. Subsequent battleship designs,influenced by HMS Dreadnought, were referred to as dreadnoughts, though the term eventually became obsolete as dreadnoughts became the only type of battleship in common use.",
   };
   return (
-    <div className="swiper-container mt-5">
+    <div className="swiper-container mt-10">
       <Swiper
         pagination={{
           dynamicBullets: true,

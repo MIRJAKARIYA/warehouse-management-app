@@ -3,9 +3,12 @@
 .swiper {
   width: 80%;
   border-radius: 10px;
-  background-image: url('../../background-images/banner-background/army-back.jpg');
+  border: 2px solid white;
+  background-color: rgba(129, 53, 23, 0.274);
 
 }
+
+
 
 .swiper-slide {
   text-align: center;
@@ -25,5 +28,11 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper{
+    width: 95%;
+  }
 }
 
