@@ -4,7 +4,7 @@ import "./Header.css";
 import { GrMenu } from "react-icons/gr";
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 header-style py-7">
+    <div className="navbar bg-base-100 header-style py-7 z-50 sticky top-0">
       <div className="flex-1">
         <Link to="/" className="normal-case text-xl title-style">
           BD ARMY WAREHOUSE
