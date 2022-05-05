@@ -50,6 +50,7 @@ const ItemInventory = () => {
       },
       body:JSON.stringify({
         name: vehicle?.name,
+        user: vehicle?.user,
         category: vehicle?.category,
         description: vehicle?.description,
         image: vehicle?.image,
