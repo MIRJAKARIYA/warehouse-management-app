@@ -8,7 +8,6 @@ import { FcGoogle } from 'react-icons/fc';
 import { BsGithub } from 'react-icons/bs';
 const SocialLogin = () => {
     const location = useLocation();
-    console.log(location)
     return (
         <div>
             <h1 className='text-4xl mb-7 text-white underline text-center font-semibold'>Or {location.pathname.includes('/login')?'Sign In':'Sign Up'} Using</h1>
