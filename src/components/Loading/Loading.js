@@ -2,8 +2,8 @@ import React from 'react';
 import LoadImage from '../../loading-image/loading-image.gif'
 const Loading = () => {
     return (
-        <div>
-            <img src={LoadImage} alt="" />
+        <div className='mt-80'>
+            <img src={LoadImage} alt="" className='mx-auto w-20'/>
         </div>
     );
 };
