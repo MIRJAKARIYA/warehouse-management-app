@@ -9,7 +9,7 @@ const SingleItem = ({ vehicle }) => {
   return (
       <div>
         <div
-        className="rounded-xl p-[4px] max-w-[400px] card-container-style"
+        className="rounded-xl p-[5px] max-w-[400px] card-container-style"
         >
         <div>
           <img

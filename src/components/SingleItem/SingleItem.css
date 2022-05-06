@@ -1,5 +1,5 @@
 .card-container-style{
-    background: linear-gradient(-45deg,navy,rgb(136, 7, 7),navy);
+    background: linear-gradient(-45deg,gold,rgb(136, 7, 7),navy);
 	background-size: 200% 200%;
 	animation: cardback 5s ease infinite;
 
