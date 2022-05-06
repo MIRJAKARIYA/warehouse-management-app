@@ -1,0 +1,19 @@
+.register-container{
+    background-image: url('../../background-images/form-back/army-back.jpg');
+    background-size: cover;
+}
+.form-style{
+    background-color: rgba(0, 0, 0, 0.795);
+    background-size: contain;
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.63);
+}
+.reg-input-style{
+    box-shadow: 1px 1px 4px 2px black inset;
+    color: black;
+    padding-left: 18px;
+    font-size: 18px;
+}
+.reg-input-style:focus{
+    outline: none;
+}

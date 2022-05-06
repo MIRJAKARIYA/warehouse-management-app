@@ -7,9 +7,9 @@ const ItemInventory = () => {
   const [isChanged, setIsChanged] = useState(false);
   useEffect(() => {
     fetch(`http://localhost:5000/vehicle/${itemId}`)
-    .then(res => res.json())
-    .then(data => setVehicle(data))
-  }, [itemId,isChanged]);
+      .then((res) => res.json())
+      .then((data) => setVehicle(data));
+  }, [itemId, isChanged]);
 
   const handleRestock = (e) => {
     e.preventDefault();
@@ -18,8 +18,8 @@ const ItemInventory = () => {
     const vehicleCount = Number(vehicle.quantity) + itemCount;
     fetch(`http://localhost:5000/restockvehicle/${itemId}`, {
       method: "PUT",
-      headers:{
-        'content-type':'application/json'
+      headers: {
+        "content-type": "application/json",
       },
       body: JSON.stringify({
         name: vehicle?.name,
@@ -37,36 +37,37 @@ const ItemInventory = () => {
         console.log(data);
         setIsChanged(!isChanged);
       });
-      e.target.reset()
+    e.target.reset();
   };
 
-  const handleDelivered = (e) =>{
-    const vehicleCount = Number(vehicle.quantity) - 1;
-    const soldCount = Number(vehicle.sold) + 1;
-    fetch(`http://localhost:5000/delivervehicle/${itemId}`,{
-      method: "PUT",
-      headers:{
-        'content-type':'application/json'
-      },
-      body:JSON.stringify({
-        name: vehicle?.name,
-        user: vehicle?.user,
-        category: vehicle?.category,
-        description: vehicle?.description,
-        image: vehicle?.image,
-        price: vehicle?.price,
-        quantity: vehicleCount,
-        sold: soldCount,
-        supplierName: vehicle?.supplierName,
-      }),
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log(data);
-      setIsChanged(!isChanged);
-    })
-
-  }
+  const handleDelivered = (e) => {
+    if (vehicle?.quantity > 0) {
+      const vehicleCount = Number(vehicle.quantity) - 1;
+      const soldCount = Number(vehicle.sold) + 1;
+      fetch(`http://localhost:5000/delivervehicle/${itemId}`, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          name: vehicle?.name,
+          user: vehicle?.user,
+          category: vehicle?.category,
+          description: vehicle?.description,
+          image: vehicle?.image,
+          price: vehicle?.price,
+          quantity: vehicleCount,
+          sold: soldCount,
+          supplierName: vehicle?.supplierName,
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          setIsChanged(!isChanged);
+        });
+    }
+  };
 
   return (
     <div className="flex flex-col md:flex-row mx-auto mt-10 md:w-[80%] w-[95%] p-5 bg-[#363945] rounded-2xl">
@@ -114,7 +115,10 @@ const ItemInventory = () => {
                 {vehicle?.sold}
               </p>
             </div>
-            <button onClick={handleDelivered} className="ml-10 font-semibold border-2 text-lg px-[50px] py-[5px] block rounded-lg duration-200 hover:bg-yellow-600">
+            <button
+              onClick={handleDelivered}
+              className="ml-10 font-semibold border-2 text-lg px-[50px] py-[5px] block rounded-lg duration-200 hover:bg-yellow-600"
+            >
               delivered
             </button>
           </div>

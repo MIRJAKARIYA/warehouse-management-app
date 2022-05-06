@@ -7,6 +7,8 @@ import AddItem from './components/AddItem/AddItem';
 import MyItems from './components/MyItems/MyItems';
 import NotFound from './components/NotFound/NotFound';
 import ItemInventory from './components/ItemInventory/ItemInventory';
+import Register from './components/Register/Register';
+import Login from './components/Login/Login';
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ function App() {
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
         <Route path='/inventory/:itemId' element={<ItemInventory></ItemInventory>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>

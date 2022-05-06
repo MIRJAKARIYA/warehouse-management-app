@@ -5,7 +5,7 @@ import { MdSystemUpdateAlt } from 'react-icons/md';
 const ManageSingleItem = ({vehicle}) => {
     const {name, image, price, quantity, sold, supplierName, category, _id} = vehicle;
     return (
-        <tr>
+        <tr className='hover'>
         <td>
           <div className="flex items-center space-x-3">
             <div className="avatar">
@@ -15,12 +15,12 @@ const ManageSingleItem = ({vehicle}) => {
             </div>
           </div>
         </td>
-        <td>{name}</td>
-        <td>{category}</td>
-        <td>{price}</td>
-        <td>{quantity}</td>
-        <td>{sold}</td>
-        <td>{supplierName}</td>
+        <td className='text-sm'>{name}</td>
+        <td className='text-sm'>{category}</td>
+        <td className='text-sm'>{price}</td>
+        <td className='text-sm'>{quantity}</td>
+        <td className='text-sm'>{sold}</td>
+        <td className='text-sm'>{supplierName}</td>
         <td>
             <div className='flex items-center justify-around ml-[-40px]'>
                 <button title='UPDATE STOCK' className='text-4xl text-blue-700'>

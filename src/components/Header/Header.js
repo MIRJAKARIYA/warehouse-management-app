@@ -38,6 +38,12 @@ const Header = () => {
           >
             MY ITEMS
           </Link>
+          <Link
+            className="mr-8 font-semibold hover:text-red-800 duration-200"
+            to="/login"
+          >
+            LOGIN
+          </Link>
         </div>
         <div className="dropdown dropdown-end">
           <button className="md:hidden block text-2xl">
@@ -65,6 +71,9 @@ const Header = () => {
             <li>
               <Link to="/myitems" className="justify-between">
                 MY ITEMS
+              </Link>
+              <Link to="/login" className="justify-between">
+                LOGIN
               </Link>
             </li>
           </ul>
