@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Banner from "../Banner/Banner";
 import "./Home.css";
 import SingleItem from "../SingleItem/SingleItem";
-import axios from "axios";
 import useVehicles from "../../hooks/useVehicles";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 const Home = () => {
   const [vehicles, setVehicles] = useVehicles();
+  const [user] = useAuthState(auth);
+  console.log(user)
   return (
     <div className="hompage-style min-h-screen flow-root">
       <Banner></Banner>

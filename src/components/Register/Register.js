@@ -3,10 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init'
+import auth from '../../firebase.init';
+import { RiEyeCloseLine, RiEyeFill } from 'react-icons/ri';
 
 
 const Register = () => {
+    const [passShown, setPassShown] = useState(false)
     const navigate = useNavigate();
     const [updateProfile] = useUpdateProfile(auth);
     const [passwordMatchError, setPassswordMatchError] = useState('');
@@ -88,16 +90,17 @@ const Register = () => {
                         <p className='mb-2 pl-3'>Email:</p>
                         <input className='border-[1px] border-black w-full h-[50px] rounded-xl reg-input-style' placeholder='Email' name='email' type="email" />
                     </div> 
-                    <div className='mt-5'>
+                    <div className='mt-5 relative'>
                         <p className='mb-2 pl-3'>Password:</p>
-                        <input className='border-[1px] border-black w-full h-[50px] rounded-xl reg-input-style' placeholder='Password' name='pass' type="password" />
+                        <input className='border-[1px] border-black w-full h-[50px] rounded-xl reg-input-style' placeholder='Password' name='pass' type={passShown?'text':'password'} />
+                        <button type='button' onClick={()=>setPassShown(!passShown)} className='absolute text-2xl top-[56%] left-[89%] text-slate-500'>{passShown?<RiEyeFill></RiEyeFill>:<RiEyeCloseLine></RiEyeCloseLine>}</button>
                     </div>
-                    <small className='text-red-700'>{passwordError}</small> 
+                    <small className='text-red-700 ml-2'>{passwordError}</small> 
                     <div className='mt-5'>
                         <p className='mb-2 pl-3'>Confirm Password:</p>
-                        <input className='border-[1px] border-black w-full h-[50px] rounded-xl reg-input-style' placeholder='Confirm password' name='conPass' type="password" />
+                        <input className='border-[1px] border-black w-full h-[50px] rounded-xl reg-input-style' placeholder='Confirm password' name='conPass' type={passShown?'text':'password'} />
                     </div>
-                    <small className='text-red-700'>{passwordMatchError}</small>
+                    <small className='text-red-700 ml-2'>{passwordMatchError}</small>
                     <button type='submit' className='w-[60%] block mx-auto mt-6 py-2 rounded-md text-lg font-bold bg-yellow-700'>Register</button> 
                 </form>
                 <Link to='/login' className='text-white block text-center mt-2 underline'>already have an account?Please sign in</Link>

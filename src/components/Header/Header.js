@@ -2,7 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import { GrMenu } from "react-icons/gr";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const handleSignOut = () =>{
+    signOut(auth)
+  }
   return (
     <div className="navbar bg-base-100 header-style py-7 z-50 sticky top-0">
       <div className="flex-1">
@@ -38,12 +45,14 @@ const Header = () => {
           >
             MY ITEMS
           </Link>
-          <Link
+          {
+            user?<button onClick={handleSignOut}>sign out</button>:<Link
             className="mr-8 font-semibold hover:text-red-800 duration-200"
             to="/login"
           >
             LOGIN
           </Link>
+          }
         </div>
         <div className="dropdown dropdown-end">
           <button className="md:hidden block text-2xl">

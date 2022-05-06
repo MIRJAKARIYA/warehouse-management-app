@@ -9,6 +9,7 @@ import NotFound from './components/NotFound/NotFound';
 import ItemInventory from './components/ItemInventory/ItemInventory';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <div className="App">

@@ -16,7 +16,7 @@ const SocialLogin = () => {
         if(user1 || user2 || user3){
             navigate(from, { replace:true });
         }
-    },[from,navigate,user1,user2,user3])
+    },[from,navigate,user1,user2,user3]);
     return (
         <div>
             <h1 className='text-4xl mb-7 text-white underline text-center font-semibold'>Or {location.pathname.includes('/login')?'Sign In':'Sign Up'} Using</h1>
