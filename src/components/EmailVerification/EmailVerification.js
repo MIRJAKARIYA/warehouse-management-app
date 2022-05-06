@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { useSendEmailVerification } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import { AiOutlineReload } from 'react-icons/ai';
 
 const EmailVerification = () => {
   const [user] = useAuthState(auth);
@@ -21,6 +22,10 @@ const EmailVerification = () => {
     }
   }, [user, navigate]);
 
+  const refreshPage = () =>{
+      window.location.reload(false);
+  }
+
   return (
     <>
       <div>
@@ -31,10 +36,13 @@ const EmailVerification = () => {
                 Verify your email at <br />
                 {user?.email}
               </h4>
-              <button className="btn btn-primary" onClick={handleVerification}>
+              <button className="text-xl px-4 py-2 rounded-lg bg-red-700 text-white hover:bg-red-800" onClick={handleVerification}>
                 Send verification again
               </button>
-              <p>Refresh the page you have verified the email</p>
+              <p className="mt-2">Refresh the page you have verified the email</p>
+              <button className="mt-2 rounded-full text-2xl border-red-7 bg-blue-700 p-1 text-white" onClick={refreshPage}>
+                  <AiOutlineReload className="" />
+              </button>
             </div>
           </div>
         </div>
