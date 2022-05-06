@@ -9,7 +9,6 @@ import Loading from "../Loading/Loading";
 const Home = () => {
   const [vehicles, setVehicles] = useVehicles();
   const [user] = useAuthState(auth);
-  console.log(vehicles)
   return (
     <div className="hompage-style min-h-screen flow-root">
       {

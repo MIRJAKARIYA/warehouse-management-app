@@ -2,7 +2,7 @@ import React from 'react';
 import { RiDeleteBin2Fill } from 'react-icons/ri';
 import { MdSystemUpdateAlt } from 'react-icons/md';
 
-const ManageSingleItem = ({vehicle}) => {
+const ManageSingleItem = ({vehicle,handleDelete}) => {
     const {name, image, price, quantity, sold, supplierName, category, _id} = vehicle;
     return (
         <tr className='hover'>
@@ -26,7 +26,7 @@ const ManageSingleItem = ({vehicle}) => {
                 <button title='UPDATE STOCK' className='text-4xl text-blue-700'>
                     <MdSystemUpdateAlt />
                 </button>
-                <button title='REMOVE FROM INVENTORY' className='text-4xl text-red-700'>
+                <button onClick={()=>handleDelete(_id)} title='REMOVE FROM INVENTORY' className='text-4xl text-red-700'>
                     <RiDeleteBin2Fill />
                 </button>
             </div>

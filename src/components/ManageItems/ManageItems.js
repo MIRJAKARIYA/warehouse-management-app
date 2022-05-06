@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import useVehicles from "../../hooks/useVehicles";
 import Loading from "../Loading/Loading";
 import ManageSingleItem from "./ManageSingleItem/ManageSingleItem";
+import { ToastContainer, toast } from 'react-toastify';
 
 const ManageItems = () => {
-  const [vehicles, setVehicles] = useVehicles();
+  const [reload, setReload] = useState(false)
+  const [vehicles, setVehicles] = useVehicles(reload);
+  
+  const handleDelete = (id) =>{
+    console.log(id)
+    fetch(`http://localhost:5000/vehicleDlete/${id}`,{
+      method: 'DELETE'
+    })
+    .then(res => res.json)
+    .then(data => {
+      setReload(!reload);
+      toast('Vehicle removed successfully');
+    })
+  }
   return (
     <div className="overflow-x-auto w-full xl:w-[90%] mx-auto">
       {vehicles.length === 0 ? (
@@ -29,10 +43,12 @@ const ManageItems = () => {
                 <ManageSingleItem
                   key={vehicle._id}
                   vehicle={vehicle}
+                  handleDelete={handleDelete}
                 ></ManageSingleItem>
               ))}
             </tbody>
           </table>
+          <ToastContainer></ToastContainer>
         </>
       )}
     </div>
