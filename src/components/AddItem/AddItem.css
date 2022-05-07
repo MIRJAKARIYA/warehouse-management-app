@@ -1,0 +1,14 @@
+.additem-container{
+    color: white;
+    background:url('../../background-images/additem-back/add-item-back.jpg'), rgba(0, 0, 0, 0.644);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.additem-container input,.description-style,.select-category{
+    background-color: rgba(0, 0, 0, 0.568);
+}
+.additem-container label{
+    color: white;
+    font-weight: bold;
+}
+
