@@ -27,8 +27,8 @@ const AddItem = () => {
             description:description,
             image:image,
             price: price,
-            quantity: quantity,
-            sold: sold,
+            quantity: Number(quantity),
+            sold: Number(sold),
             supplierName:supplierName
         }
         fetch('http://localhost:5000/addVehicle',{

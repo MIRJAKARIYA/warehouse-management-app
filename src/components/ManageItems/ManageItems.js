@@ -1,22 +1,38 @@
 import React, { useState } from "react";
-import useVehicles from "../../hooks/useVehicles";
-import Loading from "../Loading/Loading";
+import useSelectedVehicles from "../../hooks/useSelectedVehicles";
 import ManageSingleItem from "./ManageSingleItem/ManageSingleItem";
-
-
-
-
 
 const ManageItems = () => {
   const [reload, setReload] = useState(false);
-  const [vehicles, setVehicles] = useVehicles(reload);
-  
+  const [query, setQuery] = useState('')
+
+  const [vehicles] = useSelectedVehicles(query, reload);
+
+  const handleCategory = e =>{
+    const category=e.target.value;
+    if(category === ''){
+      setQuery(category)
+    }
+    else{
+      setQuery(`category=${category}`)
+    }
+  }
+
   return (
     <div className="overflow-x-auto w-full xl:w-[90%] mx-auto">
-      {vehicles.length === 0 ? (
-        <Loading></Loading>
-      ) : (
-        <>
+          <div>
+            <select defaultValue='' onChange={handleCategory} className="select select-primary w-full max-w-xs">
+              <option value=''>
+                ALL
+              </option>
+              <option value='BATTLE TANKS'>BATTLE TANKS</option>
+              <option value="FIGHTER JETS">FIGHTER JETS</option>
+              <option value="BATTLE SHIPS">BATTLE SHIPS</option>
+              <option value="UAV DRONES">UAV DRONES</option>
+              <option value="SAM SYSTEMS">SAM SYSTEMS</option>
+              <option value="BATTLE SUBMARINES">BATTLE SUBMARINES</option>
+            </select>
+          </div>
           <table className="table w-full">
             <thead>
               <tr>
@@ -41,10 +57,6 @@ const ManageItems = () => {
               ))}
             </tbody>
           </table>
-          
-          
-        </>
-      )}
     </div>
   );
 };
