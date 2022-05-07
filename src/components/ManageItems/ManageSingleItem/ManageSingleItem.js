@@ -3,6 +3,7 @@ import { RiDeleteBin2Fill } from "react-icons/ri";
 import { MdSystemUpdateAlt } from "react-icons/md";
 import { AiFillWarning } from "react-icons/ai";
 import Modal from "react-modal";
+import { useNavigate } from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -22,9 +23,9 @@ Modal.setAppElement("#root");
 const ManageSingleItem = ({ vehicle, reload, setReload }) => {
   const { name, image, price, quantity, sold, supplierName, category, _id } =
     vehicle;
-
   const [modalIsOpen, setIsOpen] = useState(false);
   const [conDelete, setCondelete] = useState("");
+  const navigate = useNavigate();
   const openModal = () => {
     setIsOpen(true);
   };
@@ -68,7 +69,7 @@ const ManageSingleItem = ({ vehicle, reload, setReload }) => {
         <td className="text-sm">{supplierName}</td>
         <td>
           <div className="flex items-center justify-around ml-[-40px]">
-            <button title="UPDATE STOCK" className="text-4xl text-blue-700">
+            <button onClick={()=>navigate(`/inventory/${_id}`)} title="UPDATE STOCK" className="text-4xl text-blue-700">
               <MdSystemUpdateAlt />
             </button>
             <button
