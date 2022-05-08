@@ -11,10 +11,10 @@ const Header = () => {
     signOut(auth)
   }
   return (
-    <div className="navbar bg-base-100 header-style py-7 z-50 sticky top-0">
+    <div className="navbar bg-blue-900 text-white py-7 z-50 sticky top-0">
       <div className="flex-1">
         <Link to="/" className="normal-case text-xl title-style">
-          BD ARMY WAREHOUSE
+          MILITARY WAREHOUSE
         </Link>
       </div>
       <div className="flex-none gap-2">
@@ -54,13 +54,13 @@ const Header = () => {
           </Link>
           }
         </div>
-        <div className="dropdown dropdown-end">
-          <button className="md:hidden block text-2xl">
+        <div className="dropdown dropdown-end text-white">
+          <button className="md:hidden block  text-2xl">
             <GrMenu></GrMenu>
           </button>
           <ul
             tabIndex="0"
-            className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            className="mt-3 text-black p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
           >
             <li>
               <Link to="/home" className="justify-between">

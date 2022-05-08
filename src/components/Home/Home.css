@@ -1,11 +1,16 @@
 .hompage-style{
     background-image: url('../../background-images/homepage-back/homepage-background.jpg');
 	background-size: cover;
+	background-attachment: fixed;
 }
 .card-container-style{
     background: linear-gradient(-45deg,Gold,rgb(136, 7, 7),Gold);
 	background-size: 200% 200%;
 	animation: cardback 5s ease infinite;
+}
+.our-team-style{
+	background-color: rgb(61, 61, 61);
+	border-radius: 20px;
 }
   @keyframes cardback {
 	0% {

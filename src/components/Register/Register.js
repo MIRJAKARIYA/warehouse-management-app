@@ -68,8 +68,7 @@ const Register = () => {
 
     useEffect(()=>{
         if(user){
-            console.log('login succcess')
-            navigate('/home');
+            navigate('/emailVerification');
         }
     },[user,navigate]);
 

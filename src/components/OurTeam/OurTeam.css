@@ -1,0 +1,8 @@
+.name-style::after{
+    content: '';
+    border: 1px solid #0891b2;
+    color: red;
+    display: block;
+    width: 170px;
+    margin: 10px auto 0;
+}
