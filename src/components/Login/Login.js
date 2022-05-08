@@ -5,6 +5,7 @@ import auth from '../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import { RiEyeCloseLine, RiEyeFill } from 'react-icons/ri';
+import useToken from '../../hooks/useJwtToken';
 
 
 const Login = () => {
@@ -23,6 +24,7 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, ResetError] = useSendPasswordResetEmail(
         auth
       );
+      const [token] = useToken(user?.user?.email);
 
     const handleLogin = e =>{
         e.preventDefault()

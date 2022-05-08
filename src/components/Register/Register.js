@@ -5,6 +5,7 @@ import './Register.css';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { RiEyeCloseLine, RiEyeFill } from 'react-icons/ri';
+import useToken from '../../hooks/useJwtToken';
 
 
 const Register = () => {
@@ -13,9 +14,8 @@ const Register = () => {
     const [updateProfile] = useUpdateProfile(auth);
     const [passwordMatchError, setPassswordMatchError] = useState('');
     const [passwordError, setPasswordError] = useState('')
-
     const [createUserWithEmailAndPassword,user] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification: true});
-
+    const [token] = useToken(user?.user?.email);
     const handleRegister = async e =>{
         e.preventDefault()
         const fname = e.target.fname.value;

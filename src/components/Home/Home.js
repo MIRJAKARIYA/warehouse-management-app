@@ -12,7 +12,6 @@ import Footer from "../../Footer/Footer";
 import { Link } from "react-router-dom";
 const Home = () => {
   const [vehicles] = useVehicles();
-  const [user] = useAuthState(auth);
   const [vehicleCount, setVehicleCount] = useState(0);
   const [vehicleDelivered, setVehicleDelivered] = useState(0);
   useEffect(() => {
