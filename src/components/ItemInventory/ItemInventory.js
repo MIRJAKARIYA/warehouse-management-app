@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const ItemInventory = () => {
@@ -74,7 +74,8 @@ const ItemInventory = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row mx-auto mt-10 md:w-[80%] w-[95%] p-5 bg-[#363945] rounded-2xl">
+<>
+<div className="flex flex-col md:flex-row mx-auto mt-10 md:w-[80%] w-[95%] p-5 bg-[#363945] rounded-2xl">
       <div className="md:w-[40%] flex justify-center">
         <img
           src={vehicle.image}
@@ -149,6 +150,10 @@ const ItemInventory = () => {
         </div>
       </div>
     </div>
+    <div className="text-center my-5">
+    <Link className="px-3 py-1 rounded-md hover:bg-blue-900 bg-blue-700 text-white text-lg font-semibold" to='/manageitems'>Manage Inventories</Link>
+    </div>
+</>
   );
 };
 

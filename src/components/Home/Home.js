@@ -9,6 +9,7 @@ import Loading from "../Loading/Loading";
 import QuantitySoldCount from "../QuantitySoldCount/QuantitySoldCount";
 import OurTeam from "../OurTeam/OurTeam";
 import Footer from "../../Footer/Footer";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [vehicles] = useVehicles();
   const [user] = useAuthState(auth);
@@ -45,13 +46,17 @@ const Home = () => {
             WAREHOUSE ITEMS
           </h1>
 
-          <div className="w-full mt-5 mb-10">
+          <div className="w-full mt-5 mb-3">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 max-w-[1300px] mx-auto justify-items-center gap-y-10">
               {vehicles?.slice(0, 6).map((vehicle) => (
                 <SingleItem vehicle={vehicle} key={vehicle._id}></SingleItem>
               ))}
             </div>
           </div>
+
+          <div className="text-center mb-10">
+          <Link className="px-3 py-1 rounded-md hover:bg-blue-900 bg-blue-700 text-white text-lg font-semibold" to='/manageitems'>Manage Inventories</Link>
+    </div>
 
           <div className="mb-10">
             <h1 className="text-white text-center text-3xl font-semibold underline mb-5">OUR TEAM MEMBERS</h1>
