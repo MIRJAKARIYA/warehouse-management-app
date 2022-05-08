@@ -13,8 +13,8 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    width: '350px',
-    borderRadius:'20px'
+    width: "350px",
+    borderRadius: "20px",
   },
 };
 
@@ -35,7 +35,7 @@ const ManageSingleItem = ({ vehicle, reload, setReload }) => {
   };
 
   const confirmDelete = (id) => {
-    fetch(`http://localhost:5000/vehicleDlete/${id}`, {
+    fetch(`https://stark-springs-77558.herokuapp.com/vehicleDlete/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -69,7 +69,11 @@ const ManageSingleItem = ({ vehicle, reload, setReload }) => {
         <td className="text-sm">{supplierName}</td>
         <td>
           <div className="flex items-center justify-around ml-[-40px]">
-            <button onClick={()=>navigate(`/inventory/${_id}`)} title="UPDATE STOCK" className="text-4xl text-blue-700">
+            <button
+              onClick={() => navigate(`/inventory/${_id}`)}
+              title="UPDATE STOCK"
+              className="text-4xl text-blue-700"
+            >
               <MdSystemUpdateAlt />
             </button>
             <button
@@ -100,24 +104,35 @@ const ManageSingleItem = ({ vehicle, reload, setReload }) => {
               Are you sure?
             </h1>
           </div>
-          
+
           <div className="mt-4">
-            <p className="text-center font-semibold">Write 'CONFIRM' to delete the vehicle</p>
-          <input
-            className="border-[1px] pl-2 h-9 block mx-auto mt-2 border-slate-500"
-            type="text"
-            onChange={handleCondelete}
-          />
+            <p className="text-center font-semibold">
+              Write 'CONFIRM' to delete the vehicle
+            </p>
+            <input
+              className="border-[1px] pl-2 h-9 block mx-auto mt-2 border-slate-500"
+              type="text"
+              onChange={handleCondelete}
+            />
           </div>
           <div className="text-center mt-4">
-          <button
-            className={`px-4 py-2 text-lg font-semibold text-white rounded-md ${conDelete==='CONFIRM'?'bg-red-700':'bg-red-700 bg-opacity-40'}`}
-            onClick={() => confirmDelete(_id)}
-            disabled={conDelete === "CONFIRM" ? false : true}
-          >
-            DELETE
-          </button>
-          <button onClick={closeModal} className="ml-2 text-white font-semibold px-4 py-2 text-lg bg-green-700 rounded-md">CANCEL</button>
+            <button
+              className={`px-4 py-2 text-lg font-semibold text-white rounded-md ${
+                conDelete === "CONFIRM"
+                  ? "bg-red-700"
+                  : "bg-red-700 bg-opacity-40"
+              }`}
+              onClick={() => confirmDelete(_id)}
+              disabled={conDelete === "CONFIRM" ? false : true}
+            >
+              DELETE
+            </button>
+            <button
+              onClick={closeModal}
+              className="ml-2 text-white font-semibold px-4 py-2 text-lg bg-green-700 rounded-md"
+            >
+              CANCEL
+            </button>
           </div>
         </div>
       </Modal>

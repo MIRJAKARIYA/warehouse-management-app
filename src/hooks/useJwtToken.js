@@ -7,7 +7,7 @@ const useToken = (email) => {
     const getToken = async () => {
       if (email) {
         const { data } = await axios.post(
-          "http://localhost:5000/loginWithWebToken",
+          "https://stark-springs-77558.herokuapp.com/loginWithWebToken",
           { email }
         );
         setToken(data.accessToken);

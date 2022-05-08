@@ -5,48 +5,47 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { ToastContainer, toast } from "react-toastify";
 const AddItem = () => {
-    const [user] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
+  const handleAddItem = (e) => {
+    e.preventDefault();
+    const itemName = e.target.itemName.value;
+    const quantity = e.target.quantity.value;
+    const price = "$" + e.target.price.value;
+    const sold = e.target.sold.value;
+    const category = e.target.category.value;
+    const supplierName = e.target.supplierName.value;
+    const image = e.target.image.value;
+    const description = e.target.description.value;
 
-    const handleAddItem = e =>{
-        e.preventDefault();
-        const itemName = e.target.itemName.value;
-        const quantity = e.target.quantity.value;
-        const price ='$'+e.target.price.value;
-        const sold = e.target.sold.value;
-        const category = e.target.category.value;
-        const supplierName = e.target.supplierName.value;
-        const image = e.target.image.value;
-        const description = e.target.description.value;
-        
-        const vehicle = {
-            name:itemName,
-            user:user.email,
-            category:category,
-            description:description,
-            image:image,
-            price: price,
-            quantity: Number(quantity),
-            sold: Number(sold),
-            supplierName:supplierName
+    const vehicle = {
+      name: itemName,
+      user: user.email,
+      category: category,
+      description: description,
+      image: image,
+      price: price,
+      quantity: Number(quantity),
+      sold: Number(sold),
+      supplierName: supplierName,
+    };
+    fetch("https://stark-springs-77558.herokuapp.com/addVehicle", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(vehicle),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.acknowledged) {
+          toast("item added successfully 😊");
+        } else {
+          toast("Something wrong happend 😕");
         }
-        fetch('http://localhost:5000/addVehicle',{
-            method:'POST',
-            headers:{
-                'content-type':'application/json'
-            },
-            body:JSON.stringify(vehicle)
-        })
-        .then(res => res.json())
-        .then(data =>{
-            if (data?.acknowledged) {
-                toast("item added successfully 😊");
-              } else {
-                toast("Something wrong happend 😕");
-              }
-        });
-        e.target.reset();  
-    }
+      });
+    e.target.reset();
+  };
   return (
     <>
       <div className="flow-root additem-container min-h-screen">
@@ -110,7 +109,12 @@ const AddItem = () => {
                 <label htmlFor="category" className="block mb-1">
                   Category:
                 </label>
-                <select className="input select-category input-bordered input-warning w-full" defaultValue={'BATTLE TANKS'} name="category" required>
+                <select
+                  className="input select-category input-bordered input-warning w-full"
+                  defaultValue={"BATTLE TANKS"}
+                  name="category"
+                  required
+                >
                   <option>BATTLE TANKS</option>
                   <option>FIGHTER JETS</option>
                   <option>BATTLE SHIPS</option>
@@ -128,7 +132,7 @@ const AddItem = () => {
                   placeholder="Emter your email"
                   className="input input-bordered input-warning w-full"
                   name="email"
-                  value={user?.email || ''}
+                  value={user?.email || ""}
                   readOnly
                   required
                 />
@@ -146,7 +150,9 @@ const AddItem = () => {
                 />
               </div>
               <div className="mt-2">
-                <label htmlFor="image" className="block mb-1">Item Image:</label>
+                <label htmlFor="image" className="block mb-1">
+                  Item Image:
+                </label>
                 <input
                   type="text"
                   placeholder="Enter the photo URL of the item"

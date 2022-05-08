@@ -10,16 +10,16 @@ const MyItems = () => {
   const [user] = useAuthState(auth);
   const [reload, setReload] = useState(false);
   const [vehicles, setVehicles] = useState([]);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getVehicles = async () => {
-      const url = `http://localhost:5000/getUserItems?user=${user.email}`;
+      const url = `https://stark-springs-77558.herokuapp.com/getUserItems?user=${user.email}`;
       try {
-        const { data } = await axios.get(url,{
-          headers:{
-            authorization: `${localStorage.getItem('ACCESS_TOKEN')}`,
-          }
+        const { data } = await axios.get(url, {
+          headers: {
+            authorization: `${localStorage.getItem("ACCESS_TOKEN")}`,
+          },
         });
         setVehicles(data);
       } catch (error) {
