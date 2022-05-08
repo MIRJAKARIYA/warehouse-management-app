@@ -40,7 +40,6 @@ const Login = () => {
     }
     useEffect(()=>{
         if(ResetError && resetError){
-            console.log(ResetError?.message)
             if(ResetError?.message.includes('user-not-found')){
                 toast('User not found 🙁');
             }
@@ -57,7 +56,6 @@ const Login = () => {
             setResetError(false);
         }
     },[ResetError,resetError])
-    console.log(error)
 
 
     useEffect(()=>{

@@ -92,11 +92,11 @@ const Header = () => {
                 HOME
               </Link>
             </li>
-            <li>
+            {user?<li>
               <Link to="/manageitems" className="justify-between">
                 MANAGE ITEMS
               </Link>
-            </li>
+            </li>:''}
             {user ? (
               <li>
                 <Link to="/additem" className="justify-between">

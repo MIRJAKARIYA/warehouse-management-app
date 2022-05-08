@@ -18,7 +18,7 @@
     "image": "https://i.ibb.co/3z62H6H/mikoyan-mig29.jpg",
     "price": "$548000000",
     "quantity": 45,
-    "sold":10,
+    "sold":40,
     "supplierName": "Mikoyan"
   },
   {
@@ -29,7 +29,7 @@
     "image": "https://i.ibb.co/jHFczpD/type-05-H-frigate.jpg",
     "price": "$5600000000",
     "quantity": 5,
-    "sold":10,
+    "sold":30,
     "supplierName": "Naresuan"
   },
   {
@@ -40,7 +40,7 @@
     "image": "https://i.ibb.co/SdfwwRJ/Bayraktar-TB2.jpg",
     "price": "$5000000",
     "quantity": 250,
-    "sold":10,
+    "sold":100,
     "supplierName": "Baykar"
   },
   {
@@ -51,7 +51,7 @@
     "image": "https://i.ibb.co/60w5Q0V/hq-22.jpg",
     "price": "$4052200",
     "quantity": 140,
-    "sold":10,
+    "sold":50,
     "supplierName": "CASIC"
   },
   {
@@ -62,7 +62,7 @@
     "image": "https://i.ibb.co/RcbJGG9/akula-class.jpg",
     "price": "$870000000",
     "quantity": 10,
-    "sold":10,
+    "sold":50,
     "supplierName": "Severodvinsk"
   },
   {
@@ -73,7 +73,7 @@
     "image": "https://i.ibb.co/VNV17RH/black-eagle-tank9.jpg",
     "price": "$78225000",
     "quantity": 45,
-    "sold":10,
+    "sold":200,
     "supplierName": "Omsktransmash"
   },
   {
@@ -84,7 +84,7 @@
     "image": "https://i.ibb.co/dQpYzyV/VT-4-tank8.jpg",
     "price": "$78000000",
     "quantity": 52,
-    "sold":10,
+    "sold":20,
     "supplierName": "Norinco"
   },
   {
@@ -95,7 +95,7 @@
     "image": "https://i.ibb.co/6yK2S68/kerrar-tank7.jpg",
     "price": "$50000000",
     "quantity": 45,
-    "sold":10,
+    "sold":40,
     "supplierName": "IRGC"
   },
   {
@@ -106,7 +106,7 @@
     "image": "https://i.ibb.co/vJPXTWv/f22-raptor.jpg",
     "price": "$500000000",
     "quantity": 50,
-    "sold":10,
+    "sold":30,
     "supplierName": "Lockheed Martin Aeronautics"
   },
   {
@@ -117,7 +117,7 @@
     "image": "https://i.ibb.co/XkRJJvs/su-57.jpg",
     "price": "$20000000",
     "quantity": 65,
-    "sold":10,
+    "sold":5,
     "supplierName": "Komsomolsk-on-Amur Aircraft Plant"
   },
   {
@@ -128,7 +128,7 @@
     "image": "https://i.ibb.co/Tm4hYpv/f-35-lightning.jpg",
     "price": "$405000000",
     "quantity": 85,
-    "sold":10,
+    "sold":20,
     "supplierName": "Lockheed Martin"
   },
   {
@@ -139,7 +139,7 @@
     "image": "https://i.ibb.co/wzHg56D/castle-class-corvette.png",
     "price": "$1020000000",
     "quantity": 10,
-    "sold":10,
+    "sold":5,
     "supplierName": "Hall,Russell & Company"
   },
   {
@@ -150,7 +150,7 @@
     "image": "https://i.ibb.co/12FLhQt/hamilton-class-frigate.jpg",
     "price": "$3540000000",
     "quantity": 15,
-    "sold":10,
+    "sold":12,
     "supplierName": "Avondale Shipyards"
   },
   {
@@ -161,7 +161,7 @@
     "image": "https://i.ibb.co/9gNN0qw/type-056-corvette.jpg",
     "price": "$700000000",
     "quantity": 30,
-    "sold":10,
+    "sold":8,
     "supplierName": "Hudong-Zhonghua Shipbuilding"
   },
   {
@@ -172,7 +172,7 @@
     "image": "https://i.ibb.co/xCsWNbt/wing-loogn.jpg",
     "price": "$4502220",
     "quantity": 300,
-    "sold":10,
+    "sold":2,
     "supplierName": "Chengdu Aircraft Industry"
   },
   {
@@ -183,7 +183,7 @@
     "image": "https://i.ibb.co/BwmKKkh/Kaman-22.jpg",
     "price": "$2500000",
     "quantity": 350,
-    "sold":10,
+    "sold":150,
     "supplierName": "IRIAF"
   },
   {

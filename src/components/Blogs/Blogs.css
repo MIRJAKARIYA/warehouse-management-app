@@ -1,0 +1,11 @@
+.blogs-container{
+    background-color: rgba(128, 128, 128, 0.26);
+    display: flow-root;
+}
+.blogs-container div{
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(168, 168, 235);
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+}

@@ -17,7 +17,6 @@ const ItemInventory = () => {
   const handleRestock = (e) => {
     e.preventDefault();
     const itemCount = Number(e.target.restockCount.value);
-    console.log(itemCount);
     const vehicleCount = Number(vehicle.quantity) + itemCount;
     fetch(`http://localhost:5000/restockvehicle/${itemId}`, {
       method: "PUT",
@@ -38,7 +37,6 @@ const ItemInventory = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setIsChanged(!isChanged);
       });
     e.target.reset();

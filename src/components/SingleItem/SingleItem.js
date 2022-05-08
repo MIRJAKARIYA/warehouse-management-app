@@ -25,10 +25,10 @@ const SingleItem = ({ vehicle }) => {
             <br />
             <button onClick={()=>setShowAll(!showAll)} className="block ml-auto mr-4 text-red-400">{showAll?'show less':'show more'}</button>
           </p>
-          <p className="text-white">Price: {price}</p>
-          <p className="text-white">Quantity: {quantity}</p>
-          <p className="text-white">Supplier name: {supplierName}</p>
-          <button onClick={()=>navigate(`/inventory/${_id}`)} className="bg-yellow-600 px-4 py-2 w-2/3 font-bold block mx-auto my-4 text-white rounded-lg">
+          <p className="text-white"><span className="font-semibold text-lg text-yellow-600">Price:</span> {price}</p>
+          <p className="text-white"><span className="font-semibold text-lg text-yellow-600">Quantity:</span> {quantity}</p>
+          <p className="text-white"><span className="font-semibold text-lg text-yellow-600">Supplier name:</span> {supplierName}</p>
+          <button onClick={()=>navigate(`/inventory/${_id}`)} className="bg-yellow-700 hover:bg-yellow-800 duration-200 px-4 py-2 w-2/3 font-bold block mx-auto my-4 text-white rounded-lg">
           UPDATE STOCK
         </button>
         </div>

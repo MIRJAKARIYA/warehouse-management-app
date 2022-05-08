@@ -21,7 +21,6 @@ const AboutUs = () => {
       setVehicleQuantity(quantity);
     }
   }, [vehicles]);
-  console.log(vehicleQuantity);
 
   return (
     <div className="flow-root bg-slate-200 min-h-screen">

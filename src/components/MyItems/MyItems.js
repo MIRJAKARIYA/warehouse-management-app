@@ -23,8 +23,6 @@ const MyItems = () => {
         });
         setVehicles(data);
       } catch (error) {
-        console.log(error);
-        console.log(error.message);
         if (error.response.status === 403 || error.response.status === 401) {
           signOut(auth);
           navigate("/login");
