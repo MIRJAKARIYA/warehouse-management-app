@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const ItemInventory = () => {
   const { itemId } = useParams();
   const [vehicle, setVehicle] = useState({});
   const [isChanged, setIsChanged] = useState(false);
+  const [user] = useAuthState(auth);
   useEffect(() => {
     fetch(`http://localhost:5000/vehicle/${itemId}`)
       .then((res) => res.json())
@@ -23,6 +26,7 @@ const ItemInventory = () => {
       },
       body: JSON.stringify({
         name: vehicle?.name,
+        user: vehicle?.user,
         category: vehicle?.category,
         description: vehicle?.description,
         image: vehicle?.image,

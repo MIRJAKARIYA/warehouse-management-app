@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { AiFillWarning } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 
 const customStyles = {
@@ -20,6 +21,7 @@ const customStyles = {
   
 
 const MySingleItem = ({ vehicle, reload, setReload }) => {
+  const navigate = useNavigate();
   const { image, name, price, quantity, sold, supplierName, _id } =
     vehicle;
 
@@ -79,7 +81,7 @@ const MySingleItem = ({ vehicle, reload, setReload }) => {
           </p>
         </div>
         <div className="absolute top-[75%] flex left-[52%]">
-          <button className="btn btn-primary mr-2">UPDATE</button>
+          <button className="btn btn-primary mr-2" onClick={()=>navigate(`/inventory/${_id}`)}>UPDATE</button>
           <button onClick={openModal} className="btn bg-red-600 hover:bg-red-700 border-0">
             DELETE
           </button>

@@ -15,14 +15,13 @@ const AddItem = () => {
         const price ='$'+e.target.price.value;
         const sold = e.target.sold.value;
         const category = e.target.category.value;
-        const email = e.target.email.value;
         const supplierName = e.target.supplierName.value;
         const image = e.target.image.value;
         const description = e.target.description.value;
         
         const vehicle = {
             name:itemName,
-            user:email,
+            user:user.email,
             category:category,
             description:description,
             image:image,

@@ -275,28 +275,6 @@
     "supplierName": "Direction des Armements"
   },
   {
-    "name": "AL KHALID MBT",
-    "user":null,
-    "category": "BATTLE TANKS",
-    "description": "Al-Khalid is designed with a 125 mm bore,48 calibre long smoothbore,auto-frettaged and chrome-plated gun barrel which is manufactured from highly stiff electroslag remelting steel.The gun is then put under stringent quality control process to ensure standard barrel life of 1,100 rounds EFC; barrels that cannot pass this test are rejected.This gun provides very high internal chamber pressures for APFSDS,HEAT FS and guided missiles.",
-    "image": "https://i.ibb.co/BqvCdWF/al-khalid-tank5.png",
-    "price": "$74000000",
-    "quantity": 25,
-    "sold":10,
-    "supplierName": "Heavy Industries Taxila"
-  },
-  {
-    "name": "M47 PATTON MBT",
-    "user":null,
-    "category": "BATTLE TANKS",
-    "description": "After the U.S.Army in Germany was equipped with the M47,the first M47s delivered under the Mutual Security Agency program were delivered to Portugal in 1952.In October the agency announced that NATO member nations had agreed to adopt the British Centurion main battle tank and the M47 as standard.By October the at Camp Drum in July,the New Jersey Army National Guard was the first reserve force to train with the tank.",
-    "image": "https://i.ibb.co/tXQb1xV/m47-patton-tank2.jpg",
-    "price": "$50000000",
-    "quantity": 63,
-    "sold":10,
-    "supplierName": "Detroit Arsenal Tank Plant"
-  },
-  {
     "name": "CHENGDU J-20",
     "user":null,
     "category": "FIGHTER JETS",
@@ -306,28 +284,6 @@
     "quantity": 46,
     "sold":10,
     "supplierName": "Chengdu Aerospace Corporation"
-  },
-  {
-    "name": "SHENYANG FC-31",
-    "user":null,
-    "category": "FIGHTER JETS",
-    "description": "The Shenyang FC-31 Gyrfalcon also known as the J-31 or J-35 is a Chinese prototype mid-sized twinjet 5th-generation fighter aircraft developed by Shenyang Aircraft Corporation.The official nickname published by SAC is Gyrfalcon,though it has also been referred to as the F-60 or J-21 Snowy Owl in some media reports,or Falcon Hawk by some military enthusiasts.J-XX nomenclatures in the Chinese military are reserved for programs launched.",
-    "image": "https://i.ibb.co/QnFYDmb/shenyang-fc-31.jpg",
-    "price": "$84500000",
-    "quantity": 54,
-    "sold":10,
-    "supplierName": "Shenyang Aircraft Corporation"
-  },
-  {
-    "name": "DASSAULT RAFALE",
-    "user":null,
-    "category": "FIGHTER JETS",
-    "description": "Dassault Rafale is one of the most expensive fighter planes in the world in 2021,having been developed in one of the most expensive countries on the globe i.e.France.A canard delta wing design is used on this twin-engine jet.Rafale,according to many analysts,is the successor of Dassault Aviations Mirage 2000 fighter from the 1980s.The cost of Rafale varies according to the country.The French Air Force purchases them at a far lower cost.",
-    "image": "https://i.ibb.co/X7T3JP7/dassault-rafale.jpg",
-    "price": "$650000000",
-    "quantity": 75,
-    "sold":10,
-    "supplierName": "Dassault Aviation"
   },
   {
     "name": "PADMA CLASS PATROL VESSEL",
@@ -341,28 +297,6 @@
     "supplierName": "Khulna Shipyard"
   },
   {
-    "name": "TYPE 021 CLASS MISSILE BOAT",
-    "user":null,
-    "category": "BATTLE SHIPS",
-    "description": "China first received a single unit of Soviet Osa-class missile boat in January 1965,and four more in 1966 through 1967 and the last two in 1968.The Hudong Shipyard built the Chinese version as Type 021-class missile boat at a rate of ten boats per year with several different versions.The majority of this class is being transferred to reserve status.Several dozen remain active and these active units are being rearmed with C-101 supersonic anti-ship missiles.",
-    "image": "https://i.ibb.co/wWbxyXK/type-021-class-missile-boat.jpg",
-    "price": "$25000000",
-    "quantity": 250,
-    "sold":10,
-    "supplierName": "Hudong Shipyard"
-  },
-  {
-    "name": "DURJOY CLASS PATROL CRAFT",
-    "user":null,
-    "category": "BATTLE SHIPS",
-    "description": "These ships are 64.2 metres long,9 metres wide and have a 4 metres draught with a displacement of 648 tonnes.The ships have a bulbous bow shape,which suggests they are designed to sustain heavy sea states.The ships have speed and range to support long missions.The large patrol crafts are powered by SEMT Pielstick 12PA6 diesel engines driving three screws for a top speed of 28 knots for anti-surface warfare variant and 25 knots for anti-submarine warfare variant.",
-    "image": "https://i.ibb.co/jwJYZnB/durjoy-class-patrol-craft.jpg",
-    "price": "$35000000",
-    "quantity": 300,
-    "sold":10,
-    "supplierName": "Wuchang Shipyard"
-  },
-  {
     "name": "TAI ANKA",
     "user":null,
     "category": "UAV DRONES",
@@ -372,28 +306,6 @@
     "quantity": 200,
     "sold":10,
     "supplierName": "Turkish Aerospace Industries"
-  },
-  {
-    "name": "TAI AKSUNGUR",
-    "user":null,
-    "category": "UAV DRONES",
-    "description": "The TAI Aksungur is an unmanned aerial vehicle (UAV) built by Turkish Aerospace Industries for the Turkish Armed Forces.Using existing technology from the TAI Anka series of drones,it is the manufacturer's largest drone with payload capacity for mission-specific equipment.It is intended to be used for long-term surveillance,signals intelligence,maritime patrol missions,or as an unmanned combat aerial vehicle.",
-    "image": "https://i.ibb.co/5ntF052/tai-aksungur.jpg",
-    "price": "$2500000",
-    "quantity": 150,
-    "sold":10,
-    "supplierName": "Turkish Aerospace Industries"
-  },
-  {
-    "name": "IAI EITAN",
-    "user":null,
-    "category": "UAV DRONES",
-    "description": "A medium-altitude,long endurance UAV,the Eitan can operate at altitudes above commercial air traffic and features all-weather capability,de-icing systems,automatic takeoff and landing systems,and triple-redundant avionics.It is a high-wing cantilever monoplane with wings of high aspect ratio.Booms extend rearward from the wings and carry twin tails that are joined by a common horizontal stabiliser.",
-    "image": "https://i.ibb.co/HpZb0xj/IAF-Eitan.jpg",
-    "price": "$2600000",
-    "quantity": 450,
-    "sold":10,
-    "supplierName": "IAI"
   },
   {
     "name": "RAPIER SAM",
@@ -407,28 +319,6 @@
     "supplierName": "British Aircraft Corporation"
   },
   {
-    "name": "GWS-30 SAM",
-    "user":null,
-    "category": "SAM SYSTEMS",
-    "description": "GWS.30 was a Royal Navy surface-to-air missile system designed in the 1960s and entering service in 1973.It was fitted to the Type 42 destroyers,Type 82 destroyer and Invincible-class aircraft carriers of the Royal Navy.Originally developed by Hawker Siddeley,the missile was built by British Aerospace after 1977.It was withdrawn from service in 2012.Britain's first naval surface-to-air missile was GWS1 Seaslug,which entered service in 1963.",
-    "image": "https://i.ibb.co/Pz6MCTJ/gws-30.jpg",
-    "price": "$450000",
-    "quantity": 250,
-    "sold":10,
-    "supplierName": "Hawker Siddeley Dynamics"
-  },
-  {
-    "name": "MIM-3 NIKE AJAX",
-    "user":null,
-    "category": "SAM SYSTEMS",
-    "description": "The United States Army's Nike Ajax was the world's first operational guided surface-to-air missile,entering service in 1954.Nike Ajax was designed to attack conventional bomber aircraft flying at high subsonic speeds and altitudes above 50,000 feet.Nike was initially deployed in the US to provide defense against Soviet bomber attacks,and was later deployed overseas to protect US bases,as well as being sold to various allied forces.Some examples remained in use until the 1970s.",
-    "image": "https://i.ibb.co/H29Gpw0/Nike-ajax.jpg",
-    "price": "$400000",
-    "quantity": 230,
-    "sold":10,
-    "supplierName": "Bell Labs"
-  },
-  {
     "name": "TRAFALGAR CLASS SUBMARINE",
     "user":null,
     "category": "BATTLE SUBMARINES",
@@ -436,226 +326,6 @@
     "image": "https://i.ibb.co/Mh18zTB/trafalgar-class.jpg",
     "price": "$548000000",
     "quantity": 15,
-    "sold":10,
-    "supplierName": "Vickers Shipbuilding"
-  },
-  {
-    "name": "VIRGINIA CLASS SUBMARINE",
-    "user":null,
-    "category": "BATTLE SUBMARINES",
-    "description": "The Virginia class,also known as the SSN-774 class,is a class of nuclear-powered cruise missile fast-attack submarines,in service in the United States Navy.Designed by General Dynamics Electric Boat and Huntington Ingalls Industries,the Virginia-class is the United States Navy's latest submarine model,which incorporates the latest in stealth,intelligence gathering,and weapons systems technology.",
-    "image": "https://i.ibb.co/MGNB6kV/virginia-class.jpg",
-    "price": "$65000000",
-    "quantity": 17,
-    "sold":10,
-    "supplierName": "Huntington Ingalls Industries"
-  },
-  {
-    "name": "SHANG CLASS SUBMARINE",
-    "user":null,
-    "category": "BATTLE SUBMARINES",
-    "description": "The Type 093 (Shang class) is a class of second generation nuclear-powered attack submarines deployed by the Chinese People's Liberation Army Navy Submarine Force.The improved Type 093G is longer than the Type 093.The 093G is now confirmed to have a vertical launching system (VLS) for YJ-18 supersonic anti-ship missiles,and anti-ship variants of the CJ-10 cruise missile.",
-    "image": "https://i.ibb.co/5M8VKLB/shang-class.jpg",
-    "price": "$400000000",
-    "quantity": 20,
-    "sold":10,
-    "supplierName": "China Shipbuilding Industry"
-  },
-  {
-    "name": "TYPE 99 MBT",
-    "user":null,
-    "category": "BATTLE TANKS",
-    "description": "The main armament is a 2-plane stabilized ZPT-98 125 mm smoothbore gun with a carousel-style autoloader.The weapon system is derived from Russian 2A46 tank gun and MZ autoloader in the T-72.The gun may be fired under computerized or manual control.The tank can carry 42 rounds including 22 in the autoloader.The rate of fire is 8 rounds per minute using the autoloader,and 2 rounds per minute with manual loading.",
-    "image": "https://i.ibb.co/tCC3vp5/type99-tank4.jpg",
-    "price": "$56841000",
-    "quantity": 98,
-    "sold":10,
-    "supplierName": "Norinco"
-  },
-  {
-    "name": "MERKAVA MBT",
-    "user":null,
-    "category": "BATTLE TANKS",
-    "description": "The Merkava Mark I and II were armed with a 105 mm M64 gun,a license built variant of the M68.The Mark III,Mark III Dor Dalet BAZ kassag,and the Mark IV are armed with an IMI 120 mm smoothbore gun which can fire all versions of Western 120 mm smooth bore tank ammunition.Each model of the Merkava has two roof mounted 7.62 mm machine guns for use by the commander and loader and another mounted co-axially with the main gun.",
-    "image": "https://i.ibb.co/N7zkchD/markava-tank3.jpg",
-    "price": "$35400000",
-    "quantity": 100,
-    "sold":10,
-    "supplierName": "MANTAK"
-  },
-  {
-    "name": "M1 ABRAMS MBT",
-    "user":null,
-    "category": "BATTLE TANKS",
-    "description": "The M1 Abrams is a third-generation American main battle tank designed by Chrysler Defense and named for General Creighton Abrams.Conceived for modern armored ground warfare and now one of the heaviest tanks in service at nearly 68 short tons,it introduced several innovative features,including a multifuel turbine engine,sophisticated Chobham composite armor,a computer fire control system,separate ammunition storage in a blow-out compartment,and NBC protection for crew safety.",
-    "image": "https://i.ibb.co/Ht9p3KF/m1-abrams-tank1.jpg",
-    "price": "$60004000",
-    "quantity": 80,
-    "sold":10,
-    "supplierName": "Lima Army Tank Plant"
-  },
-  {
-    "name": "F-15 EAGLE",
-    "user":null,
-    "category": "FIGHTER JETS",
-    "description": "The F-15 Eagle and its derivatives are among the most powerful jet fighters ever built.It was conceived and produced by McDonnell Douglas and is primarily used as an air superiority tactical fighter.The Eagle is one of the most successful fighters in modern history,having won well over 100 aerial battles with no casualties.It has been widely distributed to different air forces throughout the world,from Japan to Saudi Arabia.",
-    "image": "https://i.ibb.co/DMPRZym/f-15-eagle.jpg",
-    "price": "$20000000",
-    "quantity": 25,
-    "sold":10,
-    "supplierName": "McDonnell Douglas"
-  },
-  {
-    "name": "EUROFIGHTER TYPHOON",
-    "user":null,
-    "category": "FIGHTER JETS",
-    "description": "The Eurofighter Typhoon is a twin-engine multirole fighter plane that can perform both air-to-air and air-to-ground operations.This is the outcome of a collaboration between many European organizations,including Airbus,BAE Systems,and Leonardo.The Eurofighter Typhoon has previously seen action in Libya,where it performed aerial reconnaissance and ground strike missions during the 2011 military intervention.",
-    "image": "https://i.ibb.co/hyCGQGS/eurofighter-typhon.jpg",
-    "price": "$450000000",
-    "quantity": 95,
-    "sold":10,
-    "supplierName": "Eurofighter Jagdflugzeug GmbH"
-  },
-  {
-    "name": "SAAB JAS 39",
-    "user":null,
-    "category": "FIGHTER JETS",
-    "description": "We can sum up the Swedish JAS 39 Gripen in three words: tiny,nippy,and dangerously lethal.It is a delta wing and canard fighter with a 4th generation design.Advanced technology like fly-by-wire flying controls,AESA radar,and more are included in the fighter jet.The price of a Gripen aircraft ranges from $40 million to $65 million.The Swedish,South African,Brazilian,and Czech armed forces all operate SAAB JAS 39 Gripen aircraft.",
-    "image": "https://i.ibb.co/q1M0rDh/saab-jas-39.jpg",
-    "price": "$55000000",
-    "quantity": 100,
-    "sold":10,
-    "supplierName": "Saab AB"
-  },
-  {
-    "name": "TYPE 062 GUNBOAT",
-    "user":null,
-    "category": "BATTLE SHIPS",
-    "description": "The Type 062 gunboat is a class of gunboat of the People's Liberation Army Navy first developed and constructed in the 1950s.This unsophisticated class is relatively well-armed for its size and is the most widely built and exported Chinese naval vessel in terms of numbers.A total of 30 were built,initial boats being known as the Shanghai I class and later slightly improved boats being known as the Shanghai II class.",
-    "image": "https://i.ibb.co/8B0gQfP/type-062-gunboat.jpg",
-    "price": "$45000000",
-    "quantity": 50,
-    "sold":10,
-    "supplierName": "Shanghai ship builders"
-  },
-  {
-    "name": "CHAMSURI CLASS PATROL BOAT",
-    "user":null,
-    "category": "BATTLE SHIPS",
-    "description": "Chamsuri-class patrol vessels are naval boats that function as patrol boats.These entered service with the Republic of Korea Navy in the 1970s,and have since seen service with three other navies,of which the Philippine Navy is currently the largest import user.These boats were built by the Hanjin Industrial SB,Chinhae,and Korea SB & Eng.Masan shipyards.These boats,also referred to as patrol killer medium PKM,were built in two batches.",
-    "image": "https://i.ibb.co/jbdgctH/chamsuri-class-patrol-boat.jpg",
-    "price": "$456000000",
-    "quantity": 65,
-    "sold":10,
-    "supplierName": "Korea Tacoma"
-  },
-  {
-    "name": "RIVER CLASS MINESWEEPER",
-    "user":null,
-    "category": "BATTLE SHIPS",
-    "description": "The Rivers were built with a traditional steel hull to a design based on a commercial offshore support vessel.The class was designed to be operated as deep sea team sweepers,to combat the threat posed to submarines by Soviet deep-water buoyant moored mines codenamed Cluster Bay.The River-class MSF was equipped with the Wire Sweep Mark 9 which was capable of performing Extra Deep Armed Team Sweeping.Operating in pairs.",
-    "image": "https://i.ibb.co/b7sW5pm/river-class-minesweeper.jpg",
-    "price": "$4500000",
-    "quantity": 85,
-    "sold":10,
-    "supplierName": "Richards Dry Dock "
-  },
-  {
-    "name": "IAI SEARCHER",
-    "user":null,
-    "category": "UAV DRONES",
-    "description": "The Searcher looks almost identical to the Scout and Pioneer,but is in fact scaled up and is well over twice the size of the Scout.The Searcher is powered by a 35 kW piston engine.The new design features updated avionics and sensor systems with greater flight endurance as well as increased redundancy for improved survivability.In addition to Israel,the system had been exported and is currently in use by Russia,India,South Korea.",
-    "image": "https://i.ibb.co/QkJ9VSZ/IAI-SEARCHER.jpg",
-    "price": "$1000000",
-    "quantity": 150,
-    "sold":10,
-    "supplierName": "IAI"
-  },
-  {
-    "name": "VESTEL KARAYEL",
-    "user":null,
-    "category": "UAV DRONES",
-    "description": "The Karayel is designed and manufactured in accordance with NATO Airworthiness standard; STANAG 4671.The Karayel system has novel triple redundant distributed avionics architecture which ensures protection against all kinds of uncontrolled crash.With this feature,systematic fault safety used only in manned aviation around the world until now,has been carried to an unmanned aerial vehicle for the first time with the Karayel.",
-    "image": "https://i.ibb.co/ZK59X57/vestel-karayel.jpg",
-    "price": "$251400",
-    "quantity": 354,
-    "sold":10,
-    "supplierName": "Vestel"
-  },
-  {
-    "name": "EADS BARRACUDA",
-    "user":null,
-    "category": "UAV DRONES",
-    "description": "The Barracuda is based on commercially available 'off the shelf' components,but also many refined systems.Its fuselage is constructed entirely from carbon fibre,but also has a greater strength to weight ratio than traditional aircraft materials such as aluminum.The only significant metal component is the wing spar,running through the middle and reinforcing the wings.The wing spar allows for easy removal of the wings for transportation.",
-    "image": "https://i.ibb.co/Bq2hMWf/eads-barracuda.jpg",
-    "price": "$5500000",
-    "quantity": 350,
-    "sold":10,
-    "supplierName": "EADS"
-  },
-  {
-    "name": "KN-06 SAM",
-    "user":null,
-    "category": "SAM SYSTEMS",
-    "description": "The KN-06 is a long-range SAM that bears resemblance to the Russian S-300 and Chinese FT-2000.Imagery of missile launch tubes shows they are larger in diameter,but shorter than the S-300's missiles.The missiles are mounted on locally produced,stretched 6X6 KamAZ 55111 launcher trucks,with each holding three missile tubes.The KN-06 is reportedly capable of hitting targets up to 150 kilometres away.The system is equipped with a Flap Lid type phased array radar.",
-    "image": "https://i.ibb.co/qCw9pBL/kn-06.jpg",
-    "price": "$350000",
-    "quantity": 340,
-    "sold":10,
-    "supplierName": "North Korea industries"
-  },
-  {
-    "name": "SEA WOLF SAM",
-    "user":null,
-    "category": "SAM SYSTEMS",
-    "description": "Sea Wolf is a naval surface-to-air missile system designed and built by BAC,later to become British Aerospace Dynamics,and now MBDA.It is an automated point-defence weapon system designed as a short-range defence against both sea-skimming and high angle anti-ship missiles and aircraft.The Royal Navy has fielded two versions,the GWS-25 Conventionally Launched Sea Wolf and the GWS-26 Vertically Launched Sea Wolf forms.",
-    "image": "https://i.ibb.co/DQcxQCk/sea-wolf.jpg",
-    "price": "$450000",
-    "quantity": 200,
-    "sold":10,
-    "supplierName": "British Aircraft Corporation"
-  },
-  {
-    "name": "IRON DOME",
-    "user":null,
-    "category": "SAM SYSTEMS",
-    "description": "Iron Dome is a mobile all-weather air defense system developed by Rafael Advanced Defense Systems and Israel Aerospace Industries.The system is designed to intercept and destroy short-range rockets and artillery shells fired from distances of 4 kilometres to 70 kilometres away and whose trajectory would take them to an Israeli populated area.From 2011 to 2021,the United States contributed a total of US$ 1.6 billion to the Iron Dome defense system.",
-    "image": "https://i.ibb.co/nzHgKRR/Iron-Dome.jpg",
-    "price": "$456000",
-    "quantity": 500,
-    "sold":10,
-    "supplierName": "Israel Aerospace Industries"
-  },
-  {
-    "name": "OSCAR CLASS SUBMARINE",
-    "user":null,
-    "category": "BATTLE SUBMARINES",
-    "description": "The Oscar class,Soviet designations Project 949 Granit and Project 949A Antey,are a series of nuclear-powered cruise missile submarines designed in the Soviet Union for the Soviet Navy.They are currently in service with the Russian Navy with some of the vessels planned to be modernized as Project 949AM,to extend their service life and increase combat capabilities.",
-    "image": "https://i.ibb.co/6yrHMq9/oscar-class.jpg",
-    "price": "$540000000",
-    "quantity": 7,
-    "sold":10,
-    "supplierName": "Sevmash"
-  },
-  {
-    "name": "OHIO CLASS SUBMARINE",
-    "user":null,
-    "category": "BATTLE SUBMARINES",
-    "description": "The Ohio class of nuclear-powered submarines includes the United States Navy's 14 ballistic missile submarines and its four cruise missile submarines.Each displacing 18,750 tons submerged,the Ohio-class boats are the largest submarines ever built for the U.S.Navy.They are the world's third-largest submarines,behind the Russian Navy's Soviet-designed 48,000-ton Typhoon class[8] and 24,000-ton Borei class.The Ohios carry more missiles than either.",
-    "image": "https://i.ibb.co/PCsjzDJ/ohio-class.jpg",
-    "price": "$700000000",
-    "quantity": 12,
-    "sold":10,
-    "supplierName": "General Dynamics Electric Boat"
-  },
-  {
-    "name": "VANGUARD CLASS SUBMARINE",
-    "user":null,
-    "category": "BATTLE SUBMARINES",
-    "description": "The Vanguard class is a class of nuclear-powered ballistic missile submarines in service with the Royal Navy.The class was introduced in 1994 as part of the Trident nuclear programme,and comprises four vessels: Vanguard,Victorious,Vigilant and Vengeance,built between 1986 and 1999 at Barrow-in-Furness by Vickers Shipbuilding and Engineering,now owned by BAE Systems.All four boats are based at HM Naval Base Clyde,40 km west of Glasgow,Scotland.",
-    "image": "https://i.ibb.co/4my5ycj/vangurard-class.jpg",
-    "price": "$591000000",
-    "quantity": 17,
     "sold":10,
     "supplierName": "Vickers Shipbuilding"
   }

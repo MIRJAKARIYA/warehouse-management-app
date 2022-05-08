@@ -12,6 +12,8 @@ import Login from './components/Login/Login';
 import 'react-toastify/dist/ReactToastify.css';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import EmailVerification from './components/EmailVerification/EmailVerification';
+import AboutUs from './components/AboutUs/AboutUs';
+import Blogs from './components/Blogs/Blogs';
 function App() {
   return (
     <div className="App">
@@ -27,6 +29,8 @@ function App() {
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitems' element={<MyItems></MyItems>}></Route>
         <Route path='/inventory/:itemId' element={<ItemInventory></ItemInventory>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/emailVerification' element={<EmailVerification></EmailVerification>}></Route>

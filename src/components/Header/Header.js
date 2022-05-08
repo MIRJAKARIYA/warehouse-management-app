@@ -45,6 +45,18 @@ const Header = () => {
           >
             MY ITEMS
           </Link>
+          <Link
+            className="mr-8 font-semibold hover:text-red-800 duration-200"
+            to="/blogs"
+          >
+            BLOGS
+          </Link>
+          <Link
+            className="mr-8 font-semibold hover:text-red-800 duration-200"
+            to="/aboutus"
+          >
+           ABOUT US
+          </Link>
           {
             user?<button onClick={handleSignOut}>sign out</button>:<Link
             className="mr-8 font-semibold hover:text-red-800 duration-200"
